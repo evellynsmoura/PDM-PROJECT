@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".CalculadoraIMCActivity">
+
+    <Button
+        android:id="@+id/btnFechaAba"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:layout_marginRight="19dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="                                     X"
+        android:textColor="#673AB7"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Calcule IMC"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite seu Nome"
+        android:inputType="text"
+        android:padding="30dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite seu peso"
+        android:inputType="number|numberDecimal"
+        android:padding="30dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite sua altura"
+        android:inputType="number|numberDecimal"
+        android:padding="30dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="-----"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calcular"
+        android:padding="10dp"
+        android:text="Calcular"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="limpar"
+        android:padding="10dp"
+        android:text="Limpar"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</LinearLayout>
